@@ -19,15 +19,15 @@ import type {
 export const scholarUrl = 'https://scholar.google.com/citations?user=-C5LLqQAAAAJ';
 
 export const profile: Profile = {
-  name: 'Yaw Adu-Gyamfi',
-  shortName: 'Yaw Adu-Gyamfi',
+  name: 'Yaw Adu-Gyamfi, PhD',
+  shortName: 'Yaw Adu-Gyamfi, PhD',
   labName: 'Titan Lab',
   labAcronym: 'TITAN',
   eyebrow: 'Civil & Environmental Engineering · University of Missouri',
   headline: 'Interactive, explainable AI for',
   headlineAccent: 'safer, smarter transportation',
   intro:
-    'Yaw Adu-Gyamfi is an Associate Professor of Civil and Environmental Engineering at the University of Missouri. ' +
+    'Yaw Adu-Gyamfi, PhD, is an Associate Professor of Civil and Environmental Engineering at the University of Missouri. ' +
     'The Titan Lab builds computer vision, sensor fusion, and big-data analytics that turn cameras, LiDAR, and ' +
     'connected-vehicle data into decisions — making roads, work zones, and pavements safer, more resilient, and more efficient.',
   photo: `${import.meta.env.BASE_URL}photo.jpg`,
@@ -107,7 +107,7 @@ export const peopleNote =
 // TODO: add course numbers/titles you teach. "CVENG 8160" comes from the lab GitHub; confirm its title.
 export const courses: Course[] = [
   {
-    code: 'UNDERGRAD', // TODO: replace with the course number
+    code: 'CV_ENG 3100',
     title: 'Fundamentals of Transportation Engineering',
     description:
       'The core undergraduate introduction to transportation engineering: traffic flow and capacity, geometric design, ' +
