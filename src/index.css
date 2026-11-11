@@ -14,8 +14,8 @@
 
   --serif: 'Newsreader', 'Georgia', serif;
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --max: 1480px;
-  --gutter: clamp(16px, 4vw, 72px);
+  --max: 1840px;
+  --gutter: clamp(16px, 5vw, 96px);
   --nav-h: 64px;
 }
 
