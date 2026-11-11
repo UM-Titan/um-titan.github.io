@@ -328,8 +328,8 @@ h3 {
 }
 .thrust {
   display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 16px;
+  grid-template-columns: 96px minmax(0, 1fr) minmax(260px, 360px);
+  gap: 16px clamp(24px, 4vw, 72px);
   padding: 32px 0;
   border-bottom: 1px solid var(--line);
 }
@@ -354,8 +354,19 @@ h3 {
   color: #333;
 }
 .thrust__key {
-  font-size: 13px;
-  color: var(--gold-deep) !important;
+  border-left: 3px solid var(--gold);
+  padding-left: 18px;
+  align-self: start;
+}
+.thrust__key ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.thrust__key li {
+  font-size: 14px;
+  color: var(--gold-deep);
+  padding: 3px 0;
 }
 
 /* Two columns */
@@ -666,6 +677,12 @@ h3 {
     max-width: 380px;
     justify-self: start;
   }
+  .thrust {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+  .thrust__key {
+    grid-column: 2;
+  }
   .two-col,
   .contact__grid {
     grid-template-columns: 1fr;
@@ -683,6 +700,10 @@ h3 {
   .thrust {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+  .thrust__key {
+    grid-column: 1;
+    margin-top: 8px;
   }
   .pub {
     grid-template-columns: 1fr;

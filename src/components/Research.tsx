@@ -13,12 +13,17 @@ export function Research({ thrusts }: { thrusts: ResearchThrust[] }) {
               <div>
                 <h3>{t.title}</h3>
                 <p>{t.summary}</p>
-                {t.keyWork.length > 0 && (
-                  <p className="thrust__key">
-                    <strong>Key work</strong> · {t.keyWork.join(' · ')}
-                  </p>
-                )}
               </div>
+              {t.keyWork.length > 0 && (
+                <aside className="thrust__key">
+                  <h4 className="eyebrow">Key work</h4>
+                  <ul>
+                    {t.keyWork.map((k) => (
+                      <li key={k}>{k}</li>
+                    ))}
+                  </ul>
+                </aside>
+              )}
             </li>
           ))}
         </ol>
