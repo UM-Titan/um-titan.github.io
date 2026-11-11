@@ -238,7 +238,7 @@ h3 {
   /* Portrait is upscaled from a small original; keep it modest in size. */
   width: 100%;
   max-width: 420px;
-  justify-self: center;
+  justify-self: end;
 }
 .hero__photo img,
 .hero__placeholder {
@@ -664,6 +664,7 @@ h3 {
   }
   .hero__photo {
     max-width: 380px;
+    justify-self: start;
   }
   .two-col,
   .contact__grid {
