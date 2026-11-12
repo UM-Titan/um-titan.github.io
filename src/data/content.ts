@@ -142,6 +142,7 @@ export const serviceGroups: { heading: string; items: ServiceItem[] }[] = [
   {
     heading: 'Organizing & leadership',
     items: [
+      { role: 'Cabinet Member', org: 'Missouri Center for Transportation Innovation (MCTI) · MoDOT & University of Missouri System' },
       { role: 'Organizing Committee', org: 'Data Science for Pavements Symposium (FHWA · MCTI · UNH)' },
       { role: 'Lead, Student Data Competition', org: 'Data Science for Pavements Symposium · 32 teams in 2024' },
       { role: 'Session Presider, Future of AI in Transportation', org: 'Transportation Research Board Annual Meeting · 2023' },
